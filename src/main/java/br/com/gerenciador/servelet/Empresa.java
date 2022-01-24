@@ -1,10 +1,13 @@
 package br.com.gerenciador.servelet;
 
+import java.util.Date;
+
 public class Empresa {
 	
 	
 	private int id;
 	private String Nome;
+	private Date dataAbertura = new Date();
 	
 	
 	public int getId() {
@@ -20,6 +23,12 @@ public class Empresa {
 		Nome = nome;
 	}
 	
+	public void setDataAbertura(Date dataAbertura) {
+		this.dataAbertura = dataAbertura;
+	}
 	
+	public Date getDataAbertura() {
+		return dataAbertura;
+	}
 
 }
